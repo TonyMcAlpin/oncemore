@@ -2,8 +2,8 @@
 
     require_once '../../config/Database.php';
     require_once '../../models/Category.php';
-    include_once '../../config/Database.php';  // Maybe
-    include_once '../../models/Category.php';   //Maybe
+    //include_once '../../config/Database.php';  // Maybe
+    //include_once '../../models/Category.php';   //Maybe
 
     $method = $_SERVER['REQUEST_METHOD'];
     $endpoint = $_SERVER['REQUEST_URI'];
@@ -18,21 +18,17 @@
         exit();
     }
    
-
-  
-
-
     switch($method){
         case 'GET':
-            require '../../API/categories/read.php';
+            require '../../api/categories/read.php';
             break;
         case 'POST':
-            require '../../API/categories/create.php';
+            require '../../api/categories/create.php';
             break; 
         case 'PUT':
-            require '../../API/categories/update.php';
+            require '../../api/categories/update.php';
             break; 
         case 'DELETE':
-            require '../../API/categories/delete.php';
+            require '../../api/categories/delete.php';
             break;  
     }
