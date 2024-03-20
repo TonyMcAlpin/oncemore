@@ -15,22 +15,6 @@
     }
     
 
-
-
-
-  
-    $parts = explode('/', $endpoint);
-    $id = end($parts);
-    
-    // Check if the endpoint is requesting a specific quote by ID
-    if ($method === 'GET' && is_numeric($id)) {
-        // Call read_single method
-        require '../../api/quotes/read_single.php';
-        exit(); // Stop further execution
-   }
-
-
-
     switch($method){
         case 'GET':
             require '../../api/quotes/read.php';
