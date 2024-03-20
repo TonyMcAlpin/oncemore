@@ -30,7 +30,7 @@
 
           $cat_item = array(
             'id' => $id,
-            'category' => $category
+            'category' => $category_name
           );
 
           // Push to "data"
