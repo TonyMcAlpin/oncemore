@@ -9,7 +9,7 @@
 
     // DB Connect
     public function connect() {
-      $this->conn = null;
+      $this->conn = "Internal Database URL";
 
       try { 
         $this->conn = new PDO('mysql:host=' . $this->host . ';dbname=' . $this->db_name, $this->username, $this->password); //Look at mysql vs postgress
