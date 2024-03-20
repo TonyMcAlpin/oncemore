@@ -17,6 +17,13 @@
         header('Access-Control-Allow-Headers: Origin, Accept, Content-Type, X-Requested-With');
         exit();
     }
+    $database = new Database();
+    $db = $database->connect();
+
+    
+    // Instantiate quote object
+
+    $quote = new Quote($db);
 
     switch($method){
         case 'GET':
