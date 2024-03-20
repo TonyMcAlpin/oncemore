@@ -33,7 +33,7 @@
         // Call read_single method
         //require '../../api/quotes/read_single.php';
         //exit(); // Stop further execution
-    }
+   //}
 
 
 
