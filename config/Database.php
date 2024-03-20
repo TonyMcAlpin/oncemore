@@ -5,7 +5,7 @@
     private $port ='5432';            
     private $db_name = 'quotes';
     private $username = 'postgres';          // changed from root to postgres
-    private $password = 'postgres';          // changed from '' to postgres
+    private $password = 'Wildcats9876!!';          // changed from '' to postgres
     private $conn; 
 
     // DB Connect
