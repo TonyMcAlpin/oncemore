@@ -29,7 +29,7 @@
       if($this->conn){
         return $this->conn;
       }else{
-        $dsn= "pgsql:host={$this->host};port={$this->port};dbname={$this->db_name}";
+        $dsn= "pgsql:host={$this->host};port={$this->port};dbname={$this->dbname}";
       
 
         try { 
