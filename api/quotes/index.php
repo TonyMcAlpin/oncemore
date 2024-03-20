@@ -18,7 +18,7 @@
 
 
 
-    Parse ID from the endpoint
+  
     $parts = explode('/', $endpoint);
     $id = end($parts);
     
