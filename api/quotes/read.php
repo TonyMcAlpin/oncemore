@@ -15,9 +15,9 @@
 
     $quote = new Quote($db);
 
-    // Blog quote query
+    // Quote query
 
-    $result = $quote -> read();
+    $result = $quote->read();
     //Get row count
     $num = $result->rowCount();
 
