@@ -20,7 +20,7 @@
 
     switch($method){
         case 'GET':
-            require '../../api/quotes/read.php';
+            require 'var/www/html/api/quotes/read.php';
             break;
         case 'POST':
             require '../../api/quotes/create.php';
