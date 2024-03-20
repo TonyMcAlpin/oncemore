@@ -13,11 +13,11 @@
     
     // Instantiate quote object
 
-    $quotez = new Quote($db);
+    $quote = new Quote($db);
 
     // Blog quote query
 
-    $result = $quotez -> read();
+    $result = $quote -> read();
     //Get row count
     $num = $result->rowCount();
 
