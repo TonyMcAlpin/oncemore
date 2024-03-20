@@ -18,8 +18,8 @@
       $this->username =getenv('USERNAME');
       $this->password =getenv('PASSWORD');
       $this->dbname =getenv('DBNAME');
-      $this->host=('HOST');
-      $this->port=('PORT');
+      $this->host=getenv('HOST');
+      $this->port=getenv('PORT');
       
 
     }
