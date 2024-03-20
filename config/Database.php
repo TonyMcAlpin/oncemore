@@ -2,7 +2,7 @@
   class Database {
     // DB Params
     private $host = 'localhost';
-    private $db_name = 'quotes';
+    private $db_name = 'quotesdb';
     private $username = 'root';
     private $password = '';
     private $conn;
