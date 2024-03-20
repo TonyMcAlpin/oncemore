@@ -20,15 +20,15 @@
     
     switch($method){
         case 'GET':
-            require '../../API/quotes/read.php';
+            require '../../api/quotes/read.php';
             break;
         case 'POST':
-            require '../../API/quotes/create.php';
+            require '../../api/quotes/create.php';
             break; 
         case 'PUT':
-            require '../../API/quotes/update.php';
+            require '../../api/quotes/update.php';
             break; 
         case 'DELETE':
-            require '../../API/quotes/delete.php';
+            require '../../api/quotes/delete.php';
             break;  
     }
