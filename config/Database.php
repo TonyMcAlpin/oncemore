@@ -5,7 +5,7 @@
     private $db_name = 'quotes';
     private $username = 'root';
     private $password = '';
-    private $conn;
+    private $conn = 'Internal Database URL';
 
     // DB Connect
     public function connect() {
