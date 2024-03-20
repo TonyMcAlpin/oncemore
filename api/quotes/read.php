@@ -1,8 +1,8 @@
 
 <?php   
 
-    include '../../config/Database.php';
-    include '../../models/Quote.php';
+    include_once '../../config/Database.php';
+    include_once '../../models/Quote.php';
 
 
     // Instantiate DB & connect
