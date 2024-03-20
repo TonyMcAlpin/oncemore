@@ -1,7 +1,7 @@
 <?php
 
     require_once '../../config/Database.php';
-    require_once '../../models/Category.php';
+    require_once '../../models/Quote.php';
     //include_once '../../config/Database.php';  // Maybe
     //include_once '../../models/Category.php';   //Maybe
 
