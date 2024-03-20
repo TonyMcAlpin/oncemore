@@ -34,15 +34,15 @@
 
     switch($method){
         case 'GET':
-            require '../../API/authors/read.php';
+            require '../../api/authors/read.php';
             break;
         case 'POST':
-            require '../../API/authors/create.php';
+            require '../../api/authors/create.php';
             break; 
         case 'PUT':
-            require '../../API/authors/update.php';
+            require '../../api/authors/update.php';
             break; 
         case 'DELETE':
-            require '../../API/authors/delete.php';
+            require '../../api/authors/delete.php';
             break;  
     }
