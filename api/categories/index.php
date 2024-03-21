@@ -17,8 +17,13 @@
    
     switch($method){
         case 'GET':
+        if(isset($_GET['id']))
+        {
+            require '../../api/categories/read_single.php';
+        }else{
             require '../../api/categories/read.php';
-            break;
+        }
+        break;
         case 'POST':
             require '../../api/categories/create.php';
             break; 
