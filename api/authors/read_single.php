@@ -11,6 +11,11 @@
   // Get ID
   $author->id = isset($_GET['id']) ? $_GET['id'] : die();
 
+  if($author->id===null)
+  {
+    json_encode("Author not found");
+  }
+
   // Get author
   $author->read_single();
 
