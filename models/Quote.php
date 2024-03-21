@@ -88,9 +88,9 @@
     public function create(){
       // Create query
       $query = 'INSERT INTO ' . $this->table . '
-          (quote, author_id, category_id)
+          (id, quote, author_id, category_id)
           VALUES
-          (:quote, :author_id, :category_id)';
+          (:id, :quote, :author_id, :category_id)';
 
       // Prepare statemnet
       $stmt = $this->conn->prepare($query);
