@@ -11,7 +11,7 @@
   // Get ID
   $author->id = isset($_GET['id']) ? $_GET['id'] : die();
 
-  if($author->id===null)
+  if(isset($_GET['author_id'])===null)
   {
     json_encode("Author not found");
   }
