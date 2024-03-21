@@ -111,6 +111,7 @@
         return $stmt;
 
       }
+      $row=$stmt->fetch(PDO::FETCH_ASSOC);
 
       // Print error
       printf("Error: %s.\n", $stmt->error);
