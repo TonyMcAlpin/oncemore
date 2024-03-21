@@ -32,12 +32,10 @@
     // Create quote
 
     if($quote->create()){
-        echo json_encode(
-            array('message' => 'Post Created')
-        );
+        echo json_encode($quote->create());
     } else{
         echo json_encode(
-            array('message' => 'Post Created')
+            array('message' => 'Post Not Created')
         );
 
     }
