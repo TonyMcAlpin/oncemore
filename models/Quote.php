@@ -23,9 +23,24 @@
                                 LEFT JOIN
                                   categories c ON p.category_id = c.id
                                 LEFT JOIN
-                                  authors a ON p.author_id = a.id
-                                ORDER BY
-                                  p.id DESC';
+                                  authors a ON p.author_id = a.id';
+      if($this->author_id && $this->category_id)
+      {
+        $query .= 'WHERE p.author_id=' . $this->author_id . ' AND p.category_id=' . $this->category_id ;
+      }
+        
+      if($this->author_id)
+      {
+        $query .= 'WHERE p.author_id = ?';
+      }
+      if($this->category_id)
+      {
+        $query .= 'WHERE p.category_id = ?';
+      }
+                                  
+                              
+                                
+                                
       
       // Prepare statement
       $stmt = $this->conn->prepare($query);
