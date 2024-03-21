@@ -18,8 +18,13 @@
 
     switch($method){
         case 'GET':
+        if(isset($_GET['id']))
+        {
+            require '../../api/authors/read_single.php';
+        }else{
             require '../../api/authors/read.php';
-            break;
+        }
+        break;
         case 'POST':
             require '../../api/authors/create.php';
             break; 
