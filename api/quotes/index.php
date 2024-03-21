@@ -15,6 +15,17 @@
     }
     
 
+    if($method==='GET'){
+        require '../../api/quotes/read.php';
+    } elseif($method==='POST'){
+        require '../../api/quotes/create.php';
+    } elseif($method==='PUT'){
+        require '../../api/quotes/update.php';
+    } elseif($method==='DELETE'){
+        require '../../api/quotes/delete.php';
+    }    
+
+
     switch($method){
         case 'GET':
             require '../../api/quotes/read.php';
