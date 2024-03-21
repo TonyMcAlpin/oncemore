@@ -12,9 +12,14 @@
 
     
     // Instantiate quote object
-
+// $quote->id = isset($_GET['id']) ?  $_GET['id'] : die();
     $quote = new Quote($db);
-
+    if(isset($_GET['author_id'])){
+        $quote->author_id = $_GET['author_id'];
+    }
+    if(isset($_GET['category_id'])){
+        $quote->category_id = $_GET['category_id'];
+    }
     // Quote query
 
     $result = $quote->read();
