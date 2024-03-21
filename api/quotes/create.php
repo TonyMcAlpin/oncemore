@@ -29,11 +29,10 @@
 
     // Create quote
 
-    if($quote->create()){
-        echo json_encode($quote->create());
-    } else{
-        echo json_encode(
-            array('message' => 'Post Not Created')
-        );
+    echo json_encode($quote->create());
+    //else{
+      //  echo json_encode(
+        //    array('message' => 'Post Not Created')
+        //);
 
-    }
+}
