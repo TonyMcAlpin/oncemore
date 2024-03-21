@@ -29,13 +29,13 @@
         $query .= 'WHERE p.author_id=' . $this->author_id . ' AND p.category_id=' . $this->category_id ;
       }
         
-      if($this->author_id)
+      elseif($this->author_id)
       {
-        $query .= 'WHERE p.author_id = ?';
+        $query .= 'WHERE p.author_id =' . $this->author_id;
       }
-      if($this->category_id)
+      elseif($this->category_id)
       {
-        $query .= 'WHERE p.category_id = ?';
+        $query .= 'WHERE p.category_id =' . $this->category_id;
       }
                                   
                               
