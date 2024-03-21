@@ -37,6 +37,8 @@
       {
         $query .= 'WHERE p.category_id =' . $this->category_id;
       }
+      $query .=' ORDER BY p.id DESC';
+      
                                   
                               
                                 
@@ -107,7 +109,7 @@
 
       //Execute query
       if($stmt->execute()){
-        return true;
+        return stmt;
 
       }
 
